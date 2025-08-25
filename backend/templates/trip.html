@@ -1,0 +1,18 @@
+<h1>{{ trip.tripName }}</h1>
+<p>{{ trip.location }}</p>
+<p>{{ trip.dates.startDate }} to {{ trip.dates.endDate }}</p>
+
+{% for day in trip.itinerary %}
+  <div>
+    <h2>Day {{ day.day }}: {{ day.theme }}</h2>
+    <p>Date: {{ day.date }}</p>
+    <ul>
+      {% for activity in day.activities %}
+        <li>
+          <strong>{{ activity.time }}:</strong> {{ activity.description }}<br>
+          <em>{{ activity.notes }}</em>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}

@@ -1,0 +1,22 @@
+@import "tailwindcss";
+body{
+    background: #0D0D0D;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+/* Tailwind imports */
+
+.font-caveatbrush {
+  font-family: "Caveat Brush", cursive;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
